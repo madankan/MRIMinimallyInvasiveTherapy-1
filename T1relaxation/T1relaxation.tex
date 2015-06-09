@@ -35,6 +35,15 @@ On the other hand, a measurement data is given by the following observation mode
 \end{equation}
 where, $\theta$ and $\beta$ are corresponding flip angles of the experiment and $T_r$ denotes the repetition time. Note that $\beta$ is usually considered to be a small angle and $\theta \gg  \beta$ in general. 
 
+\textcolor{blue}{In case of different repetition times, the equation for $\rho$ can be written as:}
+
+\begin{equation}
+\rho = \frac{sin(\theta)\left(1-e^{-\frac{T_{r,1}}{T_1(u)}}\right)\left(1-e^{-\frac{T_{r,2}}{T_1(u)}}\cos(\beta)\right)}{sin(\beta)\left(1-e^{-\frac{T_{r,2}}{T_1(u )}}\right)\left(1-cos(\theta)e^{-\frac{T_{r,2}}{T_1(u)}}\right)}+\nu
+\end{equation}
+\textcolor{blue}{where, $T_{r,1}$ and $T_{r,2}$ denote the corresponding repetition times for flip angles $\theta$ and $\beta$.}
+
+
+
 The key goal of this article is to find a good estimate for temperature dependencies of parameter $T_1$, given a set of data observations $\rho_k$, $k=1,2,\cdots,n$. Note that the uncertainty in $T_1$ is related to uncertain parameters $m$ and $T_1^{ref}$. Hence, the problem of $T_1$ estimation is equivalent with estimating the parameters $m$ and $T_1^{ref}$.
 
 \section*{Parameter Estimation}\label{sec:est}
